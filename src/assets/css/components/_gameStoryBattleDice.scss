@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+.rollDice {
+    display: flex;
+    height: 300px; 
+    aspect-ratio: 2/3;
+    align-items: center ;
+    justify-content: center;
+    flex-flow: column nowrap;
+    background-image: url(../../img/ui/verticalPlate.svg);
+    background-repeat: no-repeat;
+    background-position-x: 05%;
+    background-position-y: 50%;
+    background-size: 200px;
+    gap: 20px;
+    z-index: 10;
+    margin: 0 20px;
+
+        h1 {
+            font-size: 13px;
+            color: #EDC90E;
+            font-family:'Quicksand', cursive;
+            padding-bottom: 1%;
+            
+
+        }
+
+        button {
+            width: 120px;
+            height: 30px;
+            font-size: 21px;
+            line-height: .9rem;
+            font-family: 'Quicksand', cursive;
+            border: 3px solid #EDC90E;
+            border-radius: 10px;
+            color: #EDC90E;
+            background-color: rgba(108, 28, 99, 0.6);
+            margin-top: 3.5%;
+        
+            
+            
+            &:hover {
+                background-color: darkslateblue;
+                cursor: url('../../img/ui/knight-cursor-select.png'), auto;
+            }
+        }
+}

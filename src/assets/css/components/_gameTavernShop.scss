@@ -1,0 +1,79 @@
+.gameTavernShop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-48.3%);
+  background-color: rgba(0,0,0,0.6);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in;
+
+
+  .gameTavernShopArticles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 10%;
+
+    .gameTavernShopBox {
+      width: 20vw;
+      aspect-ratio: 1/1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin: 1vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &.bg-0 {
+        background-image: url('../../img/ui/shop/common.svg');
+      }
+
+      &.bg-1 {
+        background-image: url('../../img/ui/shop/rare.svg');
+      }
+
+      &.bg-2 {
+        background-image: url('../../img/ui/shop/legendary.svg');
+      }
+
+      h1 {
+        font-weight: bold;
+        height: 30%;
+        font-size: 2vh;
+        text-align: center;
+        padding-top: 16%;
+      }
+
+      img {
+        height: 47%;
+        padding: 8% 0;
+      }
+
+      a {
+        width: 30%;
+        height: 13%;
+        padding: 3% 8% 0 0;
+        font-size: 2vh;
+        text-align: center;
+        cursor: url('../../img/ui/knight-cursor-select.png'), auto;
+
+        &:hover {
+          color: white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  button {
+    margin: 20px;
+    box-sizing: content-box;
+  }
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;900&family=Press+Start+2P&display=swap');
+.teamContact  {
+    max-width: 800px;
+    height: 100vh;
+    text-align: center;
+    margin-right: 80px;
+    margin-top: 3%;
+
+  .wrapper {
+    padding-top: 72px;
+    padding-bottom: 40px;
+    
+    &:focus {
+      outline: 0;
+    }
+  }
+  .slick-prev:before {
+    left: 8px;
+    z-index: 9999;
+  }
+
+  .slick-next::before {
+    right: -6px;
+    z-index: 9999;
+  }
+
+  .clash-card {
+    background: white;
+    width: 262px;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
+    border-radius: 41px;
+    height: calc(100vh - 280px);
+
+    .interiorCard{
+        height: calc(100% - 400px);
+        overflow-y: scroll;
+        padding-top: 20px;
+        margin-bottom: 10px;
+        scrollbar-width: thin;
+        &::-webkit-scrollbar {
+            width: 4px;
+          }
+    }
+  }
+  
+  .clash-card__image {
+    position: relative;
+    margin-bottom: 35px;
+    border-radius: 41px;
+  }
+  
+  .clash-card__image--bg {
+    background: linear-gradient(to bottom, rgb(154, 138, 177) 0%, rgb(237, 232, 237) 65%, rgb(233, 223, 235) 100%);
+    
+  }
+  img {
+      width: 100%;
+      transform: scale(2.05);
+    }
+  
+  .titles {
+    font-size: clamp(8px, 1.5vw, 15px);
+    color: #862aa4;
+    padding: 0 12px;
+  }
+
+  .clash-card__class {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    font: 14px/20px "Lato", Arial, sans-serif;
+    color: #9E9E9E;
+  }
+
+  .socialmedia1{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 800px;
+    background-image: url(../../img/avatar/githubicon.png);
+    background-position:center;
+    background-size: 60px;
+    overflow: hidden;
+    transition: .6s;
+    background-color: aliceblue;
+    cursor: pointer;
+  
+  }
+  .socialmedia1:hover{
+    -webkit-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+    background-color: rgb(134, 42, 164);
+  }
+  
+  .socialmedia2{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 800px;
+    background-image: url(../../img/avatar/linkedin.png);
+    background-position:center;
+    background-size: 60px;
+    overflow: hidden;
+    transition: .6s;
+    background-color: aliceblue;
+    cursor: pointer;
+  
+  }
+  .socialmedia2:hover{
+    -webkit-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+    background-color: rgb(134, 42, 164);
+  }
+  .clash-card__unit-name {
+    font-size: 26px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  .clash-card__unit-description {
+    padding: 20px;  
+    font-family:  "Lato", Arial, sans-serif;
+    font-size: clamp(8px, 2vw, 15px);
+    color: #9E9E9E;
+  }
+  
+  .clash-card__unit-stats {
+    
+    color: rgb(34, 29, 29);
+    font-weight: 700;
+   position:absolute
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .slick-prev {
+    left: 2px;
+    z-index: 9999;
+  }
+
+  .slick-next {
+    right: -2px;
+    z-index: 9999;
+  }
+  .slick-slider{
+    margin : 0 100px
+  }
+}
+

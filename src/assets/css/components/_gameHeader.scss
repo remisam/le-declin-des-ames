@@ -1,0 +1,10 @@
+.gameHeader {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  width: 100%;
+  padding: 30px 30px 0;
+  top: 0;
+  z-index: 1;
+}

@@ -1,0 +1,69 @@
+@import "./settings";
+
+@import "./components/dice";
+@import "./components/bigButton";
+
+@import "./pages/concept";
+
+@import "./pages/characters";
+
+@import "./pages/home";
+
+@import "./pages/game";
+
+@import "./components/gameTavern";
+@import "./components/gameTavernShop";
+
+@import "./components/gameSkills";
+@import "./components/gameSkillsTarget";
+
+@import "./components/gameHeader";
+@import "./components/gameHeaderButtons";
+@import "./components/gameHeaderHud";
+@import "./components/gameHeaderHudGold";
+@import "./components/gameHeaderHudHealth";
+@import "./components/gameHeaderHudInventory";
+@import "./components/gameHeaderHudPortrait";
+
+@import "./components/gameStory";
+@import "./components/gameStoryBattle";
+@import "./components/gameStoryBattleDice";
+@import "./components/gameStoryButtons";
+@import "./components/gameStoryParchment";
+
+@import "./components/gameOver";
+
+@import "./components/gameWon";
+@import "./components/gameWonButton";
+
+@import "./components/mainBackground";
+
+@import "./components/contact";
+@import "./components/contactForm.scss";
+@import "./components/teamContact";
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  scrollbar-width: 0;
+  cursor: url('../img/ui/knight-cursor.png'), auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.App {
+  position: relative;
+}
